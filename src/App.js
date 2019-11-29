@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from './components/button/button'
 
 function App() {
 	const [name, setName] = useState(null)
@@ -20,7 +21,7 @@ function App() {
 					Name
 					<input type="text" onChange={handleChange} />
 				</label>
-				<button type="submit">Submit</button>
+				<Button type="submit">Submit</Button>
 			</form>
 			{show && <h1>Hello {name} :-)</h1>}
 		</div>
