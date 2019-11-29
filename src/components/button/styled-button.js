@@ -10,8 +10,8 @@ export const ButtonWrapper = styled.button`
 		background: ${props => (props.success ? '#75a839' : '#028bb1')};
 		color: ${props => (props.bordered ? '#fff' : '#fff')};
 	}
-	border: ${props =>
-		props.success ? '0.0625rem solid #8bc34a' : '0.0625rem solid transparent'};
+	box-shadow: 0 0 0 0.0625rem transparent;
+	border: none;
 	padding: ${props =>
 		props.size === 'lg' ? '0.875rem 2.125rem' : '0.625rem 1.25rem'};
 	text-transform: uppercase;
