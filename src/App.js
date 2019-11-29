@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import Form from './components/form/form'
 import Button from './components/button/button'
-
+import Input from './components/input/input'
+import Label from './components/label/label'
 function App() {
 	const [name, setName] = useState(null)
 	const [show, setShow] = useState(false)
@@ -16,13 +18,13 @@ function App() {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
-				<label>
+			<Form onSubmit={handleSubmit}>
+				<Label>
 					Name
-					<input type="text" onChange={handleChange} />
-				</label>
+					<Input type="text" onChange={handleChange} />
+				</Label>
 				<Button type="submit">Submit</Button>
-			</form>
+			</Form>
 			{show && <h1>Hello {name} :-)</h1>}
 		</div>
 	)
