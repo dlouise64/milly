@@ -3,10 +3,8 @@ import styled from 'styled-components'
 export const ButtonWrapper = styled.button`
 	&:hover {
 		cursor: pointer;
-		border: ${props =>
-			props.success
-				? '0.0625rem solid #75a839'
-				: '0.0625rem solid transparent'};
+		box-shadow: 0 0 0 0.0625rem transparent;
+		border: none;
 		background: ${props => (props.success ? '#75a839' : '#028bb1')};
 		color: ${props => (props.bordered ? '#fff' : '#fff')};
 	}
